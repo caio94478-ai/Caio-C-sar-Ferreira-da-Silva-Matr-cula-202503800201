@@ -1,0 +1,36 @@
+from IPython.display import HTML
+
+html_content = """
+<!DOCTYPE html>
+<html>
+<body>
+
+<table border="3" style="width:100%; border-color: lightgreen; text-align:center;">
+    <tr>
+        <th></th>
+        <th>Coluna 1</th>
+        <th>Coluna 2</th>
+        <th>Coluna 3</th>
+    </tr>
+
+    <tr>
+        <th>Linha 1</th>
+        <td>
+            <a href="https://www.google.com" target="_blank">
+                <img src="imagem.jpg" width="100">
+            </a>
+        </td>
+        <td>Dado</td>
+        <td>Dado</td>
+    </tr>
+</table>
+
+<br>
+
+<iframe src="https://www.google.com" width="600" height="400"></iframe>
+
+</body>
+</html>
+"""
+
+HTML(html_content)
